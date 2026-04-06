@@ -5,8 +5,10 @@ pipeline {
 
         stage('Read File') {
             steps {
-                echo "Pipeline successfully chal raha hai 😎"
-                echo "My name is raunak and I play football"
+                script {
+                    def content = readFile 'kumar.txt'
+                    echo content
+                }
             }
         }
 
