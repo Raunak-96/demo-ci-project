@@ -6,7 +6,7 @@ pipeline {
         stage('Read File') {
             steps {
                 script {
-                    def content = readFile 'kumar.txt'
+                    def content = readFile 'raunak.txt'
                     echo content
                 }
             }
