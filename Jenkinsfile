@@ -18,10 +18,10 @@ node {
     stage('Word Check') {
         def content = readFile('raunak.txt')
 
-        if(content.contains("city")) {
-            echo "✅ Word 'city' found"
+        if(content.contains("jenkins")) {
+            echo "✅ Word 'jenkins' found"
         } else {
-            error "❌ Word 'city' NOT found → Build Failed"
+            error "❌ Word 'jenkins' NOT found → Build Failed"
         }
     }
 
